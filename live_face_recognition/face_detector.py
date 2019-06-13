@@ -19,12 +19,6 @@ class FaceDetector():
         else:
             face_locations = face_recognition.face_locations(image)
 
-        # face_images = []
-
-        # for face_loc in face_locations:
-        #     top, right, bottom ,left = face_loc
-        #     face_images.append(image[top:bottom, left:right])
-
         return face_locations
 
     def get_face_encodings(self, image, face_locations):
